@@ -1,0 +1,99 @@
+.verse-card {
+  max-width: 700px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  padding: 24px;
+  text-align: center;
+  font-family: Georgia, serif;
+}
+
+.verse-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.loading,
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.verse-text blockquote {
+  font-size: 22px;
+  font-style: italic;
+  color: #1f2937;
+  margin: 0;
+}
+
+.verse-text cite {
+  display: block;
+  margin-top: 8px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.translation {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 12px;
+}
+
+.btn,
+.btn-outline {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+}
+
+.btn-outline {
+  border: 1px solid #d1d5db;
+  background: transparent;
+  color: #374151;
+}
+
+.btn-outline:hover {
+  background: #f3f4f6;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.note {
+  font-size: 12px;
+  color: #9ca3af;
+}
+

@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Bible Verse New Tab",
+  "version": "1.0.0",
+  "description": "Shows a random Bible verse (KJV) every time you open a new tab.",
+  "icons": {
+    "128": "icon128.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "permissions": [],
+  "host_permissions": [
+    "https://api.bible/*",
+    "https://bible-api.com/*"
+  ]
+}
